@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM.Space</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        .color {
+            background-color: #00000089;
+
+        }
+    </style>
+
+</head>
+
+<body class="bg-[#171717]">
+
+    <!-- ------------------------------------------------------------------------ Header Starts  -->
+
+
+
+    <header id="header" class="w-[100%] h-[70px]  fixed z-50 transition-all duration-500 ">
+        <div id="header-inner" class="inner max-w-[1340px] mx-auto border-b-2 border-[white] h-full">
+            <div class="max-w-[1240px] h-full flex justify-between items-center mx-auto px-[50px]">
+                <div class="logo text-abril-ff text-[29px] text-white flex items-center gap-3 text-aboreto"><img
+                        src="img/logo.png" alt="" class="w-[100px]">.Spaces</div>
+
+                <i onclick="toggleMenu()" class="fa-solid fa-bars text-[35px] text-white cursor-pointer"></i>
+
+            </div>
+        </div>
+    </header>
+    <nav id="menu-open" class="fixed bg-black bg-opacity-[50%] backdrop-blur-md z-30 top-80px left-[0%] w-[100vw] h-[100vh]
+        flex justify-center items-center transition duration-500">
+        <ul class=" flex flex-col gap-[70px] text-4xl text-aboreto">
+            <!-- <li><a href="#hero" id="nav-hero" class="text-white hover:text-yellow-300">Spaces</a></li> -->
+            <li><a href="#living" onclick="toggleMenu()" class="text-white hover:text-yellow-300">Living Room</a></li>
+            <li><a href="#pool" onclick="toggleMenu()" class="text-white hover:text-yellow-300">Pool</a></li>
+            <li><a href="#kitchen" onclick="toggleMenu()" class="text-white hover:text-yellow-300">Kitchen</a></li>
+            <li><a href="#bedroom" onclick="toggleMenu()" class="text-white hover:text-yellow-300">Bedroom</a></li>
+            <li><a href="#gallery" onclick="toggleMenu()" class="text-white hover:text-yellow-300">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ------------------------------------------------------------------------ Header-open menu  Starts  -->
+
+
+
+
+    <!-- ------------------------------------------------------------------------ Hero Starts  -->
+
+
+    <div id="hero" class="hero h-[95vh] w-full 
+        bg-[url('https://images.unsplash.com/photo-1600047509358-9dc75507daeb?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+         bg-[cover] bg-[center]
+         relative">
+        <div
+            class="absolute overlay w-full h-full shadow-[inset_0px_0px_300px_30px] shadow-[black] flex flex-col justify-center items-center text-white gap-[20px]">
+            <div class="hero-title text-2xl md:text-3xl lg:text-5xl text-center text-aboreto p-4 leading-[60px]
+            ">
+                DISCOVER YOUR NEXT HOLIDAY HOME <br>
+                IN COUNTRYSIDE POCKET
+            </div>
+            <button class="border-0 text-aboreto text-xl md:text-2xl p-4 px-6 backdrop-blur-0
+                transition duration-400 bg-[#171717] rounded-md hover:bg-[#0000009f] hover:backdrop-blur-sm">Book
+                Now</button>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------ Section 1 Starts  -->
+
+    <div class=" sec1 w-full lg:h-[85vh] relative
+        bg-[url('https://images.unsplash.com/photo-1551893949-63e62228675d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+        bg-[cover]
+        bg-[center]
+        text-aboreto">
+        <!-- <div class="overlay absolute  w-full h-full bg-[#cdcdcda1]"></div> -->
+        <div id="living"
+            class="float relative max-w-[90%] py-[60px] min-h-min top-[-100px] bg-white flex justify-center items-center shadow-[20px_20px_30px] shadow-[#00000082]">
+            <div class="flex w-[90%] h-min lg:flex-row flex-col items-center">
+
+                <!--  Section 1 Text Area -->
+                <div class="w-full lg:w-[40%] h-[100%] p-[3%] flex flex-col justify-evenly ">
+                    <div class="border-s-2 border-[grey] w-full ps-[10%] flex flex-col justify-evenly">
+                        <span class="text-[18px] block">LIVING ROOM</span>
+                        <span class="text-[30px] leading-[28px] font-semibold"> VERY SPACIOUS <br> LIVING ROOM</span>
+                    </div>
+                    <div class="w-full p-3 ps-[10%]">
+                        <p class="text-[13px] leading-[22px] text-inter">
+                            Discover luxurious mansions featuring expansive living rooms, perfect for elegant gatherings
+                            and comfortable living. Experience spacious opulence.
+                        </p>
+                    </div>
+                    <div class="w-full flex justify-end">
+                        <button
+                            class="border-2 border-[#2c2c2e] hover:bg-transparent hover:text-[#2c2c2e] hover:font-semibold
+                                    transition duration-400 bg-[#2c2c2e] w-[90%] py-[20px] text-white flex justify-center items-center gap-[30px]"><span>Discover
+                                our House</span> <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <!--  Section 1 Image Area -->
+                <div class="w-full lg:w-[60%]">
+                    <img src="https://images.unsplash.com/photo-1614255976202-8ce52bfcb655?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="w-full h-full">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------------------------------------ Section 2 Starts  -->
+
+    <div id="pool" class="sec2 w-full h-[95vh]
+        bg-[url('https://images.unsplash.com/photo-1613152184920-bc1c4ab7fd1d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+        bg-[cover]
+        bg-center pt-[100px] text-aboreto">
+        <div class="title w-[300px] h-[90px] border-s-2 border-[#0b0805] mx-auto ">
+            <div class="w-full h-full ps-[10%] flex flex-col justify-evenly">
+                <span class="text-[18px] block">Mesmerizing</span>
+                <span class="text-[30px] leading-[28px] font-semibold"> POOL AREA</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------ Section 3 Starts  -->
+
+    <div id="kitchen" class="sec1 w-full xl:h-[85vh] relative min-h-[85vh] h-min
+        bg-[url('https://images.unsplash.com/photo-1551893949-63e62228675d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+        bg-[cover]
+        bg-[center]
+        text-aboreto flex flex-col xl:flex-row  justify-between items-center">
+        <!-- <div class="overlay absolute  w-full h-full bg-[#cdcdcda1]"></div> -->
+        <div class="float absolute max-w-min p-[60px] min-h-min top-[-150px] left-0 md:mx-[100px] mx-[50px] lg:mx-[200px]
+                shadow-[20px_20px_30px] shadow-[#00000089] bg-white flex justify-center items-center ">
+            <div class="flex w-min h-min lg:flex-row flex-col items-center">
+
+                <!--  Section 1 Image Area -->
+                <div class="w-[70vw] max-h-[500px] max-w-[500px] xl:w-[500px] h-[70vw] xl:h-[500px]">
+                    <img src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="w-full h-full">
+                </div>
+            </div>
+        </div>
+        <div class="w-[100%] md:w-[60%] lg:w-[50%] min-h-[60vh]  sm:h-[80vh] flex justify-center items-center  ">
+        </div>
+        <div
+            class="sec3text-outer w-[100%] md:w-[40%] lg:w-[50%] pb-[100px] md:pb-[0px] h-full flex justify-center items-center  ">
+            <div class="sec3-Text lg:w-[60%] h-[50%]">
+                <div class="w-full h-[100%] p-[3%] flex flex-col justify-evenly ">
+                    <div class="border-s-2 border-[grey] w-full ps-[10%] flex flex-col justify-evenly">
+                        <span class="text-[18px] block">KITCHEN AREA</span>
+                        <span class="text-[30px] leading-[28px] font-semibold"> MINIMALISTIC <br> KITCHEN HALL</span>
+                    </div>
+                    <div class="w-full p-3 ps-[10%]">
+                        <p class="text-[13px] leading-[22px] text-inter">
+                            Experience luxurious mansions with open hall kitchens, designed for seamless entertaining
+                            and modern living. Enjoy spacious, stylish culinary spaces.
+                        </p>
+                    </div>
+                    <div class="w-full flex justify-end">
+                        <button
+                            class="border-2 border-[#2c2c2e] hover:bg-transparent hover:text-[#2c2c2e] hover:font-semibold
+                                    transition duration-400 bg-[#2c2c2e] w-[90%] py-[20px] text-white flex justify-center items-center gap-[30px]"><span>Discover
+                                our KITCHEN</span> <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------------------------------------------ Section 4 Starts  -->
+
+    <div id="bedroom" class="sec4 w-full h-[100vh]
+                bg-[url('https://images.unsplash.com/photo-1625334782252-da92af3ad887?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+                bg-cover bg-center flex justify-center pt-[100px] text-aboreto">
+        <div class="title w-[300px] h-[90px] border-s-2 border-[#0b0805] mx-auto ">
+            <div class="w-full h-full ps-[10%] flex flex-col justify-evenly">
+                <span class="text-[18px] block">CALM</span>
+                <span class="text-[30px] leading-[28px] font-semibold"> BEDROOMS</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ------------------------------------------------------------------------ Section 5 Starts  -->
+
+
+    <div id="more"
+        class="sec5 w-full min-h-[70vh] xl:h-[70vh] relative flex flex-col lg:flex-row justify-evenly bg-white">
+
+
+        <div
+            class="relative top-[100px] tabs w-[90%] mx-auto lg:w-[40%] h-min  bg-white flex flex-col justify-between
+                hover:shadow-[20px_20px_40px] hover:shadow-[#00000082] hover:scale-[1.05] cursor-pointer transition duration-400 ">
+            <div class="img w-full min-h-[300px]
+            bg-[url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1916&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+            bg-cover bg-center 
+            "></div>
+            <div class="tab-text w-full flex-grow p-[50px]">
+
+
+                <div class="sec3-Text lg:w-full h-[50%]">
+                    <div class="w-full h-[100%] p-[3%] flex flex-col justify-evenly ">
+                        <div class="border-s-2 border-[grey] w-full ps-[10%] flex flex-col justify-evenly text-aboreto">
+                            <span class="text-[18px] block">READING ROOM</span>
+                            <span class="text-[30px] leading-[28px] font-semibold"> VERY SPACIOUS <br> READING
+                                ROOM</span>
+                        </div>
+                        <div class="w-full p-3 ps-[10%]">
+                            <p class="text-[13px] leading-[22px] text-inter">
+                                Discover luxurious mansions featuring spacious reading rooms, perfect for serene
+                                retreats and intellectual pursuits. Experience tranquil, elegant study spaces.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div
+            class="relative top-[100px] tabs w-[90%] mx-auto lg:w-[40%]  h-min bg-white flex flex-col justify-between
+                hover:shadow-[20px_20px_40px] hover:shadow-[#00000082] hover:scale-[1.05] cursor-pointer transition duration-400 ">
+            <div class="img w-full min-h-[300px]
+            bg-[url('https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+            bg-cover bg-center 
+            "></div>
+            <div class="tab-text w-full flex-grow  p-[50px]">
+
+                <div class="sec3-Text w-full h-[50%]">
+                    <div class="w-full h-[100%] p-[3%] flex flex-col justify-evenly ">
+                        <div class="border-s-2 border-[grey] w-full ps-[10%] flex flex-col justify-evenly text-aboreto">
+                            <span class="text-[18px] block">DINING HALL</span>
+                            <span class="text-[30px] leading-[28px] font-semibold"> VERY SPACIOUS <br> DINING
+                                HALL</span>
+                        </div>
+                        <div class="w-full p-3 ps-[10%]">
+                            <p class="text-[13px] leading-[22px] text-inter">
+                                Discover luxurious mansions featuring spacious and elegant dining halls, ideal for
+                                sophisticated gatherings and memorable meals. Experience refined dining in style.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- ------------------------------------------------------------------------ Section 5 Starts  -->
+
+    <div id="gallery" class="section6-gallery w-full h-[800px] flex flex-col justify-center flex-col items-center 
+           bg-[url('https://images.unsplash.com/photo-1551893949-63e62228675d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+           bg-[cover]
+           bg-[center] gap-[50px]
+           pt-[100px]
+        ">
+        <div class="gallery-title text-aboreto font-semibold tracking-wider"><span class="text-[23px]">SEA ALL
+                PHOTOS</span></div>
+        <div class="galleryslide w-full flex justify-evenly gap-[10px] overflow-x-scroll"
+            style="-ms-overflow-style: none;">
+            <div class="gallery-item min-w-[300px] h-[300px]
+                    bg-[url('https://images.unsplash.com/photo-1618221880373-feacd0701d84?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+                    bg-center bg-cover hover:scale-[1.2] transition duration-400 cursor-pointer"> </div>
+            <div class="gallery-item min-w-[300px] h-[300px]
+                    bg-[url('https://images.unsplash.com/photo-1617806265182-7b3f847f0b75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NzN8fHxlbnwwfHx8fHw%3D')]
+                    bg-center bg-cover hover:scale-[1.2] transition duration-400 cursor-pointer"> </div>
+            <div class="gallery-item min-w-[300px] h-[300px]
+                    bg-[url('https://images.unsplash.com/photo-1616593871468-2a9452218369?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+                    bg-center bg-cover hover:scale-[1.2] transition duration-400 cursor-pointer"> </div>
+            <div class="gallery-item min-w-[300px] h-[300px]
+                    bg-[url('https://images.unsplash.com/photo-1616593918824-4fef16054381?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+                    bg-center bg-cover hover:scale-[1.2] transition duration-400 cursor-pointer"> </div>
+            <div class="gallery-item min-w-[300px] h-[300px]
+                    bg-[url('https://images.unsplash.com/photo-1616486532925-accce4930585?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+                    bg-center bg-cover hover:scale-[1.2] transition duration-400 cursor-pointer"> </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------ Footer Starts  -->
+
+    <footer class="w-full p-[40px] text-center bg-white text-[18px] font-semibold text-aboreto text-black">
+        ASM.Spaces 2024. Copyright Reserved
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
